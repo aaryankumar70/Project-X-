@@ -1,0 +1,20 @@
+# Core
+torch==2.13.0
+torchvision==0.28.0
+transformers==5.17.0
+Pillow
+numpy
+pandas
+
+# Environment / configuration
+python-dotenv
+
+# API
+fastapi
+uvicorn[standard]
+
+# Database
+pymongo
+
+# HTTP / CORS
+python-multipart
