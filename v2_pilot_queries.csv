@@ -1,0 +1,47 @@
+test_number,type,query,expected_category,expected_image
+1,EXACT,"I lost my camouflage backpack with the red patch",backpack,test_img1.jpg
+2,EXACT,"I lost my brown backpack with the black sides",backpack,test_img3.jpeg
+3,EXACT,"I lost my black backpack with the reflective white lines",backpack,test_img13.jpeg
+4,EXACT,"I lost my brown leather wallet",wallet,test_img5.jpeg
+5,EXACT,"I lost my red journal",journal,test_img7.jpeg
+6,EXACT,"I lost my dark blue journal",journal,test_img11.jpeg
+7,EXACT,"I lost my black round smartwatch",smartwatch,test_img8.jpeg
+8,EXACT,"I lost my white charger",charger,test_img9.jpeg
+9,EXACT,"I lost my blue case",case,test_img10.jpeg
+10,EXACT,"I lost my black laptop",laptop,test_img12.jpeg
+11,EXACT,"I lost my black glasses",glasses,test_img14.jpeg
+12,EXACT,"I lost my orange scissors",scissors,test_img4.jpeg
+13,EXACT,"I lost my keys with a tan key holder",keys,test_img6.jpeg
+14,EXACT,"I lost my black earbud case",earbud_case,test_img2.jpeg
+15,CATEGORY_ONLY,"I lost my backpack",backpack,
+16,CATEGORY_ONLY,"I can't find my bag",backpack,
+17,CATEGORY_ONLY,"my notebook disappeared",journal,
+18,CATEGORY_ONLY,"I lost my wallet",wallet,
+19,CATEGORY_ONLY,"I lost my watch",smartwatch,
+20,CATEGORY_ONLY,"I lost my charger",charger,
+21,CATEGORY_ONLY,"I lost my keys",keys,
+22,CATEGORY_ONLY,"I lost my glasses",glasses,
+23,CATEGORY_ONLY,"I lost my laptop",laptop,
+24,CATEGORY_ONLY,"I lost my scissors",scissors,
+25,SYNONYM,"my school bag is missing",backpack,
+26,SYNONYM,"I can't find my spectacles",glasses,
+27,SYNONYM,"my notebook is gone",journal,
+28,SYNONYM,"I misplaced my earbud box",earbud_case,
+29,TYP0,"I lost my backpak",backpack,
+30,TYP0,"I lost my walet",wallet,
+31,TYP0,"I lost my chargerr",charger,
+32,TYP0,"I lost my laptpo",laptop,
+33,ATTRIBUTE,"brown backpack",backpack,
+34,ATTRIBUTE,"black backpack",backpack,
+35,ATTRIBUTE,"red notebook",journal,
+36,ATTRIBUTE,"dark blue notebook",journal,
+37,ATTRIBUTE,"black rectangular glasses",glasses,
+38,ATTRIBUTE,"orange handled scissors",scissors,
+39,AMBIGUOUS,"I lost something black",,
+40,AMBIGUOUS,"I lost something yesterday",,
+41,AMBIGUOUS,"I lost my bag near college",backpack,
+42,AMBIGUOUS,"I lost a small thing",,
+43,IRRELEVANT,"I lost my backpack yesterday after class near the library",backpack,
+44,IRRELEVANT,"I think I lost my black glasses while going to class",glasses,
+45,CONFLICTING,"I lost my red journal but it was dark blue",journal,
+46,NO_INFORMATION,"I lost something",,

@@ -1,0 +1,15 @@
+item_id,image_id,category,color,material,distinctive_features
+BP001,test_img1.jpg,backpack,brown,,camouflage-style pattern; red front patch; two front compartments
+BP002,test_img3.jpeg,backpack,brown,,brown front panel; black side sections; multiple zippers
+BP003,test_img13.jpeg,backpack,black,,white reflective curved accents; small circular logo
+EC001,test_img2.jpeg,earbud_case,black,,small rounded oval case; smooth exterior
+WL001,test_img5.jpeg,wallet,brown,,folded rectangular shape; visible stitching; flap closure
+KY001,test_img6.jpeg,keys,tan-brown,,tan leather-like key fob; two visible metal keys
+JN001,test_img7.jpeg,journal,red,,solid red cover; rectangular shape
+JN002,test_img11.jpeg,journal,dark-blue,,dark blue cover; rectangular shape
+SW001,test_img8.jpeg,smartwatch,black,,round watch face; black strap
+CH001,test_img9.jpeg,charger,white,,small white rectangular charger block
+CS001,test_img10.jpeg,case,blue,,bright blue hard case; rounded rectangular shape
+LP001,test_img12.jpeg,laptop,black,,black lid; angular geometric pattern
+GL001,test_img14.jpeg,glasses,black,,rectangular black frames
+SC001,test_img4.jpeg,scissors,orange,,orange handles; metal blades
