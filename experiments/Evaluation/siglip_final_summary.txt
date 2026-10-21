@@ -1,0 +1,33 @@
+LOSTANDFOUNDAI — SIGLIP METADATA EVALUATION
+====================================================
+Input file: D:\LostAndFoundAI\src\Evaluation\siglip_metadata_results.csv
+Rows in dataset: 48
+
+METRICS
+----------------------------------------------------
+category_top1_correct: 39/48 = 81.25%
+category_top3_correct: 45/48 = 93.75%
+color_top1_strict_correct: 35/48 = 72.92%
+color_top1_tolerant_correct: 38/48 = 79.17%
+color_top3_strict_correct: 43/48 = 89.58%
+color_top3_tolerant_correct: 46/48 = 95.83%
+
+ERROR COUNTS
+----------------------------------------------------
+Category Top-1 failures: 9
+Strict color Top-1 failures: 13
+Rows with either category or strict color failure: 21
+
+ATTRIBUTE EVALUATION
+----------------------------------------------------
+Attribute precision/recall/F1: NOT EVALUATED.
+Reason: free-text ground_truth_features is not a validated,
+independently labelled set of individual attribute tags.
+Predicted attributes should currently be reviewed qualitatively.
+
+INTERPRETATION
+----------------------------------------------------
+Strict color scoring checks exact normalized color labels.
+Tolerant color scoring additionally merges defined shade variants.
+Top-3 measures whether the expected label appears among candidates.
+These scores describe this dataset, not guaranteed production accuracy.

@@ -1,0 +1,49 @@
+item_id,image_id,category,color,material,distinctive_features
+BP001,test_img1.jpg,backpack,brown/green,,camouflage pattern; red front patch; multiple compartments
+EC001,test_img2.jpeg,earbud_case,black,,rounded oval case; smooth exterior
+BP002,test_img3.jpeg,backpack,brown/black,,brown body; black side sections; multiple zippers
+SC001,test_img4.jpeg,scissors,orange/metal,,orange handles; metal blades
+WL001,test_img5.jpeg,wallet,brown,,folded rectangular wallet; stitched edges
+KY001,test_img6.jpeg,keys,brown/metal,,brown key fob; two visible keys
+JN001,test_img7.jpeg,journal,red,,plain red hard cover
+SW001,test_img8.jpeg,smartwatch,black,,round watch face; black strap
+CH001,test_img9.jpeg,charger,white,,small white wall charger
+CS001,test_img10.jpeg,case,blue,,bright blue hard case; rounded corners
+JN002,test_img11.jpeg,journal,dark_blue,,dark blue hard cover
+LP001,test_img12.jpeg,laptop,black,,black lid; angular geometric design
+BP003,test_img13.jpeg,backpack,black/grey,,black body; reflective curved front accents
+GL001,test_img14.jpeg,glasses,black,,rectangular black frames
+HP001,test_img15.jpeg,headphones,white,,over-ear headphones; white/cream finish
+WB001,test_img16.jpeg,water_bottle,purple/transparent,,transparent bottle; purple body/cap
+EP001,test_img17.jpeg,earphones,black/white,,wired earphones; white earbud housing
+PC001,test_img18.jpeg,pencil_case,yellow,,long rounded case; cartoon graphic
+WB002,test_img19.jpeg,water_bottle,pink/clear,,clear bottle; pink cap/top
+NB001,test_img20.jpeg,notebook,orange,,orange cover; colorful illustrated design
+WB003,test_img21.jpeg,water_bottle,yellow/clear,,transparent bottle; yellow/orange cap
+BK001,test_img22.jpeg,book,yellow,,yellow cover; illustrated character; title text visible
+BK002,test_img23.jpeg,book,blue,,blue illustrated cover; title text visible
+PN001,test_img24.jpeg,pen,blue,,blue ballpoint-style pen
+BK003,test_img25.jpeg,book,yellow,,yellow cover; bottle/character illustration; title text visible
+BK004,test_img26.jpeg,book,black/white,,Franz Kafka cover; portrait; title text visible
+BK005,test_img27.jpeg,book,black/white,,The Trial / Franz Kafka cover; title text visible
+NB002,test_img28.jpeg,notebook,blue/purple,,blue-purple cover; colorful abstract lettering/design
+BK006,test_img29.jpeg,book,purple/black,,Notes from Underground cover; title text visible
+BK007,test_img30.jpeg,book,white/black,,Metamorphosis cover; title text visible
+BK008,test_img31.jpeg,book,brown,,illustrated brown cover; title text visible
+BK009,test_img32.jpeg,book,black/white,,black cover; white title text
+JW001,test_img33.jpeg,jewelry,black/red/gold,,beaded necklace/bracelet pieces
+PH001,test_img34.jpeg,phone,black,,black smartphone; front screen visible
+PH002,test_img35.jpeg,phone,dark_purple/black,,smartphone; multi-camera rear module
+BK010,test_img36.jpeg,book,blue/purple,,illustrated cover; title text visible
+EP002,test_img37.jpeg,earphones,black,,wired earphones; black cable
+BK011,test_img38.jpeg,book,blue,,Douglas Adams cover; title text visible
+PH003,test_img39.jpeg,phone,dark_grey,,smartphone; rear camera module
+BK012,test_img40.jpeg,book,white/black,,Deep Work cover; title text visible
+PC002,test_img41.jpeg,pouch,blue/grey,,soft rectangular zip pouch
+WL002,test_img42.jpeg,wallet,brown,,small folded brown wallet
+BK013,test_img43.jpeg,book,white,,Atomic Habits cover; title text visible
+KY002,test_img44.jpeg,keys,black/white/metal,,keys with small white character keychain
+BP004,test_img45.jpeg,bag,black/grey,,compact black/grey shoulder or sling bag; front flap
+RG001,test_img46.jpeg,ring,silver,,metallic ring
+SCF001,test_img47.jpeg,scarf,orange/red,,orange-red fabric scarf
+EP003,test_img48.jpeg,earphones,white,,white wired earphones/cable
