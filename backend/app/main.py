@@ -1,6 +1,6 @@
 
 from contextlib import asynccontextmanager
-
+from app.services.caption_service import CaptionService
 from fastapi import FastAPI
 
 from app.api.routes import router
@@ -11,12 +11,14 @@ from app.services.item_store import ItemStore
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     app.state.embedding_service = EmbeddingService()
+    app.state.caption_service = CaptionService()
     app.state.item_store = ItemStore()
 
     try:
         yield
     finally:
         app.state.embedding_service = None
+        app.state.caption_service = None
         app.state.item_store = None
 
 
