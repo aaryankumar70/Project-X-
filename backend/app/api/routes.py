@@ -1,3 +1,9 @@
+import io
+
+from PIL import Image, UnidentifiedImageError
+from fastapi import File, HTTPException, Request, UploadFile
+
+from app.services.image_analysis import analyze_image
 
 from uuid import uuid4
 
@@ -215,3 +221,70 @@ def search_lost_item(
         "score_margin": results["score_margin"],
         "ambiguous": results["ambiguous"],
     }
+
+@router.post("/items/analyze")
+async def analyze_uploaded_item(
+    request: Request,
+    photo: UploadFile = File(...),
+):
+    embedding_service = getattr(
+        request.app.state, "embedding_service", None
+    )
+    caption_service = getattr(
+        request.app.state, "caption_service", None
+    )
+
+    if embedding_service is None or caption_service is None:
+        raise HTTPException(
+            status_code=503,
+            detail="Image analysis models are not ready.",
+        )
+
+    if photo.content_type not in {
+        "image/jpeg", "image/png", "image/webp"
+    }:
+        raise HTTPException(
+            status_code=415,
+            detail="Upload a JPEG, PNG, or WebP image.",
+        )
+
+    image_bytes = await photo.read(8 * 1024 * 1024 + 1)
+
+    if not image_bytes:
+        raise HTTPException(status_code=400, detail="Image is empty.")
+
+    if len(image_bytes) > 8 * 1024 * 1024:
+        raise HTTPException(
+            status_code=413,
+            detail="Image must be 8 MB or smaller.",
+        )
+
+    try:
+        image = Image.open(io.BytesIO(image_bytes))
+        image.verify()
+
+        image = Image.open(io.BytesIO(image_bytes))
+        image.load()
+        image = image.convert("RGB")
+
+    except (UnidentifiedImageError, OSError, ValueError):
+        raise HTTPException(
+            status_code=400,
+            detail="The uploaded file is not a valid image.",
+        )
+
+    try:
+        result = analyze_image(
+            image,
+            embedding_service,
+            caption_service,
+        )
+        return result
+
+    except Exception as exc:
+        # Log the actual exception on the server during development.
+        print(f"Image analysis failed: {exc}")
+        raise HTTPException(
+            status_code=500,
+            detail="Image analysis failed.",
+        ) from exc
